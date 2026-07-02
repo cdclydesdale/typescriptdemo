@@ -8,6 +8,7 @@ let myGame = new Game("Epic Quest");
 let newGamer: PlayerData = {
     name: "Alex",
     age: 30,
+    gender: "Male",
     highScore: 9999
 };
 
