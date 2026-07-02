@@ -3,6 +3,7 @@
 export interface PlayerData {
     name: string;
     age: number;
+    gender?: string;
     // The '?' makes this property OPTIONAL. 
     // A player can have a high score, but they don't have to.
     highScore?: number; 
@@ -23,12 +24,14 @@ function displayPlayerInfo(player: PlayerData){
 let newPlayer: PlayerData = {
     name: "Sarah",
     age: 28,
+    gender: "Female",
     highScore: 5000 
 };
 
 let rookiePlayer: PlayerData = {
     name: "Leo",
-    age: 19
+    age: 19,
+    gender: "Male"
     // highScore is missing, but TypeScript allows it because of the '?'
 };
 
